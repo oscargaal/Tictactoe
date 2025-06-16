@@ -4,7 +4,8 @@
   "author": "Germinal Camps for CodeOp",
   "license": "Proprietary",
   "scripts": {
-    "start": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
+    "start": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./input.css -o ./output.css --minify"
   },
   "devDependencies": {
     "prettier-plugin-tailwindcss": "^0.6.11",

@@ -10,7 +10,7 @@ Experimenta el juego en vivo:
 
 | Característica | Enlace |
 | :------------- | :----- |
-| **Jugar Juego** | [Tic Tac Toe en vivo](TU_ENLACE_NETLIFY_AQUI) |
+| **Jugar Juego** | https://tictactoe-oscargaal.netlify.app |
 
 ---
 
