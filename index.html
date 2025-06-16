@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="output.css" />
+  <script src="tictactoe.js" defer></script>
+
+  <title>❌⭕ Tic Tac Toe</title>
+</head>
+
+<body>
+
+  <div class="bg-[#F5ECD5] mainColor select-none">
+
+    <div class="flex justify-center items-center h-screen relative">
+
+      <div class="menuStart flex flex-col justify-center items-center w-96 h-96 shadow-lg bg-white absolute gap-12 z-20">
+        <h2 class="w-full text-center font-bold">Which side are you playing?</h2>
+        <div class="flex items-center justify-center gap-6">
+          <button class="xStart w-32 h-32 bg-[#A4B465] text-center flex items-center justify-center text-4xl shadow-lg cursor-pointer">❌</button>
+          <button class="oStart w-32 h-32 bg-[#F0BB78] text-center flex items-center justify-center text-4xl shadow-lg cursor-pointer">⭕</button>
+        </div>
+
+        <div>
+          <label for="gameMode" class="font-bold">Gamemode:</label>
+          <select id="gameMode" class="text-center">
+            <option value="playerVsPlayer">🧑 vs 🧑</option>
+            <option value="playerVsRobot">🧑 vs 🤖</option>
+            <option value="blockChallenge">🧱 Challenge</option>
+            <option value="blockChallengeRobot">🧱 Challenge 🤖</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="xTurnColor w-1/2 h-full z-0 absolute left-0 bg-[#A4B465] hidden"></div>
+      <div class="oTurnColor w-1/2 h-full z-0 absolute left-1/2 bg-[#F0BB78] hidden"></div>
+
+      <div class="allGame bg-white z-10 shadow-lg px-14 py-8 flex flex-col justify-evenly items-center hidden">
+
+        <img class="mx-auto mb-8" src="./images/TTTLogo.png" alt="TTTLogo" width="200px" height="200px">
+
+        <div id="game" class="grid grid-cols-3 grid-rows-3 w-96 h-96 mb-8">
+
+          <div class="flex items-center justify-center hover:bg-gray-200 w-full h-full">
+            <div id="0" class="text-4xl cell"></div>
+          </div>
+
+          <div class="border-l-4 border-r-4 flex items-center justify-center hover:bg-gray-200 w-full h-full">
+            <div id="1" class="text-4xl cell"></div>
+          </div>
+
+          <div class="flex items-center justify-center hover:bg-gray-200 w-full h-full">
+            <div id="2" class="text-4xl cell"></div>
+          </div>
+
+          <div class="border-t-4 border-b-4 flex items-center justify-center hover:bg-gray-200 w-full h-full">
+            <div id="3" class="text-4xl cell"></div>
+          </div>
+
+          <div class="border-4 flex items-center justify-center hover:bg-gray-200 w-full h-full">
+            <div id="4" class="text-4xl cell"></div>
+          </div>
+
+          <div class="border-t-4 border-b-4 flex items-center justify-center hover:bg-gray-200 w-full h-full">
+            <div id="5" class="text-4xl cell"></div>
+          </div>
+
+          <div class="flex items-center justify-center hover:bg-gray-200 w-full h-full">
+            <div id="6" class="text-4xl cell"></div>
+          </div>
+
+          <div class="border-l-4 border-r-4 flex items-center justify-center hover:bg-gray-200 w-full h-full">
+            <div id="7" class="text-4xl cell"></div>
+          </div>
+
+          <div class="flex items-center justify-center hover:bg-gray-200 w-full h-full">
+            <div id="8" class="text-4xl cell"></div>
+          </div>
+
+        </div>
+
+        <div class="min-h-8 mt-4">
+          <h2 class="xMoment font-bold text-[#A4B465] hidden">x Turn!</h2>
+          <h2 class="xWin font-bold text-[#A4B465] hidden">Team x wins!</h2>
+
+          <h2 class="oMoment font-bold text-[#F0BB78] hidden">o Turn!</h2>
+          <h2 class="oWin font-bold text-[#F0BB78] hidden">Team o wins!</h2>
+
+          <h2 class="tie font-bold hidden">Tie!</h2>
+        </div>
+
+        <div class="flex justify-center items-center">
+          <button
+            class="bg-red-400 hover:bg-red-600 text-white font-bold py-2 px-4 border-2 border-white rounded-md shadow-lg cursor-pointer restart">Restart</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- https://colorhunt.co/palette/626f47a4b465f5ecd5f0bb78 -->
+
+</html>

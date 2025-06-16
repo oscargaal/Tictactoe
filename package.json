@@ -1,0 +1,14 @@
+{
+  "name": "dom-project",
+  "version": "1.0.0",
+  "author": "Germinal Camps for CodeOp",
+  "license": "Proprietary",
+  "scripts": {
+    "start": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
+  },
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "@tailwindcss/cli": "^4.0.15",
+    "tailwindcss": "^4.1.5"
+  }
+}

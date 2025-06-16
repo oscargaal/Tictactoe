@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+.x::after {
+    content: "❌";
+}
+
+.o::after {
+    content: "⭕";
+}
+
+.b::after {
+    content: "⛔";
+}
+
+/* Board style */
+
+/* Pseudo elements */
+
+/* Tile style */
+
+/* Game over window */
