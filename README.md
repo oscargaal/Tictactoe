@@ -93,4 +93,4 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para má
 Puedes contactarme a través de:
 
 * **GitHub:** [oscargaal](https://github.com/oscargaal)
-* **LinkedIn:** [Oscar García](https://www.linkedin.com/in/oscar-garc%C3%ADa-b4a755308/)
+* **LinkedIn:** [Oscar García](https://www.linkedin.com/in/oscargaal/)
